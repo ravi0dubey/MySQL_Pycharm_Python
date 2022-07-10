@@ -20,21 +20,21 @@ try:
     cursor.execute(selecttable_query)
     print(cursor.fetchall())
 
-#Commenting as it is already created
-    # create_table_query = "CREATE TABLE APIDATABASE.EMPLOYEE1(Emp_ID int(10),Emp_Name varchar(80), Emp_MailID varchar(50), Emp_Sal int(6))"
-    # cursor.execute(create_table_query)
-    # print(cursor.fetchall())
+# Commenting as it is already created
+    create_table_query = "CREATE TABLE APIDATABASE.EMPLOYEE1(Emp_ID int(10),Emp_Name varchar(80), Emp_MailID varchar(50), Emp_Sal int(6))"
+    cursor.execute(create_table_query)
+    print(cursor.fetchall())
 
     showtable_query= "SHOW TABLES"
     cursor.execute(showtable_query)
     print(cursor.fetchall())
 
 
-    #
-    # inserttable_query = "INSERT INTO APIDATABASE.EMPLOYEE1 VALUES(10,'Ravi Ranjan','r@gmail.com',40000)"
-    # cursor.execute(inserttable_query)
-    # print(cursor.fetchall())
-    # mydb.commit()
+
+    inserttable_query = "INSERT INTO APIDATABASE.EMPLOYEE1 VALUES(10,'Ravi Ranjan','r@gmail.com',40000)"
+    cursor.execute(inserttable_query)
+    print(cursor.fetchall())
+    mydb.commit()
 
     selecttable_query= "SELECT * FROM APIDATABASE.EMPLOYEE1"
     cursor.execute(selecttable_query)
